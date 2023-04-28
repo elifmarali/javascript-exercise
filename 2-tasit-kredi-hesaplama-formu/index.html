@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sytle.css" />
+  </head>
+  <body onload="yillar()">
+    <h3>Tasit Vergi Hesaplama Formu</h3>
+    <form action="#" id="vergiForm">
+      <label for="aracTipi">Arac Tipini Seciniz:</label>
+      <select name="araclar" id="aracTipi" size="2">
+        <option value="motorsiklet">Motorsiklet</option>
+        <option value="otomobil">Otomobil</option>
+      </select>
+      <label for="motorGucu">Arac Motor Gucunu Seciniz:</label>
+      <span>
+        <input type="radio" name="motorGucu" id="secenek1" value="999cc alti" />
+        <label for="secenek1">999cc Alti</label>
+        <input
+          type="radio"
+          name="motorGucu"
+          id="secenek2"
+          value="1000cc-1600cc"
+        />
+        <label for="secenek2">1000cc-1600cc</label>
+        <input
+          type="radio"
+          name="motorGucu"
+          id="secenek3"
+          value="1601cc-2000cc"
+        />
+        <label for="secenek3">1601cc-2000cc</label>
+        <input
+          type="radio"
+          name="motorGucu"
+          id="secenek4"
+          value="2001cc ustu"
+        />
+        <label for="secenek4">2001cc ustu</label>
+      </span>
+      <label for="aracModeli">Arac Modelini Seciniz:</label>
+      <select name="" id="aracModeli">
+        <option value="default">Yil Seciniz</option>
+      </select>
+    </form>
+    <input
+      type="button"
+      value="Vergiyi Hesapla"
+      id="hesaplaButon"
+      onclick="vergiHesapla()"
+    />
+    <h5 id="sonuc"></h5>
+    <script src="app.js"></script>
+  </body>
+</html>
