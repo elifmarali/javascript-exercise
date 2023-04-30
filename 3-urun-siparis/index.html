@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urun Siparis Formu</title>
+    <link rel="stylesheet" href="style.css " />
+  </head>
+  <body onload="urunAdediDoldur() ,urunTaksitiDoldur()">
+    <h3>Parfumeri Urunleri Siparis Formu</h3>
+    <form action="#" id="urunForm">
+      <label for="urunCinsiyet">Urun cinsiyetini seciniz:</label>
+      <span>
+        <input type="radio" name="urunCinsiyet" id="kadinUrunleri" value="K" onchange="urunleriGetir()"/>
+        <label for="kadinUrunleri">Kadin Urunleri</label>
+        <input type="radio" name="urunCinsiyet" id="erkekUrunleri" value="E" onchange="urunleriGetir()"/>
+        <label for="erkekUrunleri">Erkek Urunleri</label>
+      </span>
+      <div>
+        <label for="urunListesi">Urun Listesi:</label>
+        <select name="" id="urunListesi"></select>
+      </div>
+      <div>
+        <label for="urunAdedi">Urun Adedi:</label>
+        <select name="" id="urunAdedi"></select>
+      </div>
+
+      <div>
+        <label for="urunTaksiti">Taksit Sayisi:</label>
+        <select name="" id="urunTaksiti"></select>
+      </div>
+      <input type="button" value="Hesapla" id="btnAraToplam" onclick="Hesapla()"/>
+      <div>
+        <label for="textAraToplam">Ara Toplam= </label>
+        <input type="text" name="" id="textAraToplam" disabled />
+      </div>
+      <div>
+        <label for="textKargo">Kargo= </label>
+        <input type="text" name="" id="textKargo" disabled />
+      </div>
+    </form>
+    <h5 id="sonuc"></h5>
+    <script src="app.js"></script>
+  </body>
+</html>
