@@ -1,0 +1,69 @@
+body {
+    background-color: #FFF8D6;
+    color: #617A55;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+#pizzaForm {
+    background-color: #F7E1AE;
+    padding: 30px;
+    color: #A4D0A4;
+    border: 1px solid #617A55;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+#pizzaEkMalzemeAciklama {
+    display: flex;
+    margin: 5px;
+
+}
+
+span {
+    display: flex;
+    margin: 4px;
+}
+
+#btnHesapla {
+    color: #617A55;
+    background-color: #FFF8D6;
+    border: none;
+    height: 20px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 300ms all;
+}
+#btnHesapla:hover{
+    background-color: #617A55;
+   color: #FFF8D6;
+}
+#butonDiv{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border: none;
+    height: 20px;
+}
+#pizzaSecilmisMalzemeler{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}

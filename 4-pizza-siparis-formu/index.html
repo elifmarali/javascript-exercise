@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Siparis Formu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>Pizza Siparis Formu</h3>
+    <form action="#" id="pizzaForm">
+      <label for="pizzaBoyut">Pizza boyutunu seciniz:</label>
+      <select name="" id="pizzaBoyut">
+        <option value="20">Kucuk Boy</option>
+        <option value="30">Orta Boy</option>
+        <option value="40">Buyuk Boy</option>
+        <option value="50">Super Boy</option>
+      </select>
+      <label for="pizzaEkMalzeme" id="pizzaEkMalzemeAciklama"
+        >Ek malzemeleri seciniz:</label
+      >
+      <span>
+        <label for="mal1">Yesil Biber</label>
+        <input type="checkbox" name="grupEkMalzeme" id="mal1" value="Yesil Biber"/>
+        <label for="mal2">Mısır</label>
+        <input type="checkbox" name="grupEkMalzeme" id="mal2" value="Mısır"/>
+        <label for="mal3">Sucuk</label>
+        <input type="checkbox" name="grupEkMalzeme" id="mal3" value="Sucuk" />
+      </span>
+      <span>
+        <label for="mal4">Yesil Zeytin</label>
+        <input type="checkbox" name="grupEkMalzeme" id="mal4" value="Yesil Zeytin"/>
+        <label for="mal5">Siyah Zeytin</label>
+        <input type="checkbox" name="grupEkMalzeme" id="mal5" value="Siyah Zeytin"/>
+        <label for="mal6">Mantar</label>
+        <input type="checkbox" name="grupEkMalzeme" id="mal6" value="Mantar"/>
+      </span>
+      <label for="pizzaSecilmisMalzemeler">Sectiginiz malzemeler:</label>
+      <select name="" id="pizzaSecilmisMalzemeler" size="6"></select>
+      <label for="indirimKontrol">Indirim kodunuz var mi?</label>
+      <span>
+        <input type="radio" id="indirimKontrolTrue" name="indirimKontrol" value="aktif" onchange="toogle()"/>
+        <label for="indirimKontrolTrue">Indirim kodum var</label>
+        <input type="radio" id="indirimKontrolFalse" name="indirimKontrol" value="pasif" onchange="toogle()" checked />
+        <label for="indirimKontrolFalse">Indirim kodum yok</label>
+      </span>
+      <label for="textIndirimKodu">Indirim kodunuzu giriniz:</label>
+      <input type="text" name="" id="textIndirimKodu" disabled/>
+      <div id="butonDiv">
+        <input
+          type="button"
+          value="Hesapla"
+          onclick="hesapla()"
+          id="btnHesapla"
+        />
+      </div>
+    </form>
+    <h5 id="sonuc"></h5>
+    <script src="app.js"></script>
+  </body>
+</html>
